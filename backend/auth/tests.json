@@ -1,0 +1,18 @@
+{
+  "tests": [
+    {
+      "name": "Login admin success",
+      "method": "POST",
+      "path": "/",
+      "body": {"action": "login", "email": "admin@nastavnik.ru", "password": "123456"},
+      "expectedStatus": 200
+    },
+    {
+      "name": "Login wrong password",
+      "method": "POST",
+      "path": "/",
+      "body": {"action": "login", "email": "admin@nastavnik.ru", "password": "wrong"},
+      "expectedStatus": 401
+    }
+  ]
+}

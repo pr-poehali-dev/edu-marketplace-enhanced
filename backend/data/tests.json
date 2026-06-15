@@ -1,0 +1,22 @@
+{
+  "tests": [
+    {
+      "name": "Get categories",
+      "method": "GET",
+      "path": "/?resource=categories",
+      "expectedStatus": 200
+    },
+    {
+      "name": "Get services",
+      "method": "GET",
+      "path": "/?resource=services",
+      "expectedStatus": 200
+    },
+    {
+      "name": "Get admin stats",
+      "method": "GET",
+      "path": "/?resource=stats",
+      "expectedStatus": 200
+    }
+  ]
+}
